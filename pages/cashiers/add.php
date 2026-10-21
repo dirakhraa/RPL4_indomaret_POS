@@ -8,6 +8,7 @@ include ROOTPATH . '/includes/header.php';
 <center style="margin-top: 50px;">
     <h1>Tambah Data Kasir</h1>
     <form action="../../process/cashiers_process.php" method="post">
+        <input type="hidden" name="action" value="add">
         <div class="input-group">
             <input type="text" name="nama_kasir" id="username" class="custom-input" placeholder="Masukkan nama Kasir..."
                 required>
