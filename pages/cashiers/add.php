@@ -23,3 +23,7 @@ include ROOTPATH . '/includes/header.php';
         <button type="submit" class="btn btn-primary">Tambah Kasir</button>
     </form>
 </center>
+
+<?php
+	include ROOTPATH . '/includes/footer.php';
+?>
