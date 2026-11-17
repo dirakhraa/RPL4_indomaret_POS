@@ -38,8 +38,8 @@ if($_POST["action"] == "add"){
         </script>";
     }
 
-}else if($_POST["action"] == "delete"){
-    $id_kasir = $_POST["id_kasir"];
+}else if($_GET["action"] == "delete"){
+    $id_kasir = $_GET["id_kasir"];
     // menghapus data kasir di table_kasir di database indomaret_RPL4
     $hasil = mysqli_query($connection, "DELETE FROM tabel_kasir WHERE id_kasir='$id_kasir'");
 
