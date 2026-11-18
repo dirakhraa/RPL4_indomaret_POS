@@ -28,18 +28,9 @@ body {
 .logo a {
   font-size: 24px;
   font-weight: 700;
+  color: #d61627; /* Warna merah Indomaret */
   text-decoration: none;
   letter-spacing: -0.5px;
-
-  /* 1. Gabungan warna gradient (Contoh: Merah Indomaret ke Biru Indomaret) */
-  background: linear-gradient(to right, #f01a1a, #00569c);
-
-  /* 2. Potong background agar masuk ke dalam teks */
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  /* 3. Sembunyikan warna teks bawaan agar gradient terlihat */
-  -webkit-text-fill-color: transparent;
 }
 
 /* ===== Navigation ===== */
@@ -257,8 +248,7 @@ h2 {
   overflow-x: auto;
 }
 
-Tabel khusus halaman transaksi
-.transaction-container {
+Tabel khusus halaman transaksi .transaction-container {
   width: 95%;
   max-width: 1600px;
   margin: 0 auto 40px auto;
