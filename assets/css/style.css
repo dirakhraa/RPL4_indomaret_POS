@@ -257,6 +257,30 @@ h2 {
   overflow-x: auto;
 }
 
+Tabel khusus halaman transaksi
+.transaction-container {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto 40px auto;
+  padding: 0 10px;
+  overflow-x: auto;
+}
+
+/* Membuat tabel transaksi melebar */
+.transaction-container .styled-table {
+  width: 100%;
+  min-width: 1400px;
+  table-layout: auto;
+}
+
+/* Agar tulisan tidak terlalu banyak turun baris */
+.transaction-container th,
+.transaction-container td {
+  white-space: nowrap;
+  padding: 20px 15px;
+  text-align: center;
+}
+
 /* 4. Desain Utama Kotak Tabel */
 .styled-table {
   width: 100%;
