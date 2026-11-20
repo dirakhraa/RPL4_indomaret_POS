@@ -6,6 +6,8 @@ include ROOTPATH . '/includes/header.php';
 
 // Mengambil daftar produk dari database
 $query_produk = mysqli_query($connection, "SELECT * FROM tabel_produk");
+$query_donasi = mysqli_query($connection, "SELECT * FROM tabel_donasi");
+$query_kasir = mysqli_query($connection, "SELECT * FROM tabel_kasir");
 ?>
 
 <div class="transaction-container">
@@ -29,7 +31,16 @@ $query_produk = mysqli_query($connection, "SELECT * FROM tabel_produk");
 
             <div class="form-field">
                 <label>ID Kasir</label>
-                <input type="number" name="id_kasir" class="custom-input" placeholder="Masukkan ID kasir" required>
+                <select name="id_kasir" class="custom-input" required>
+                    <option value="">Pilih Kasir</option>
+
+                    <?php while ($kasir = mysqli_fetch_assoc($query_kasir)) { ?>
+                    <option value="<?= $kasir['id_kasir']; ?>">
+                        <?= htmlspecialchars($kasir['nama_kasir']); ?>
+                        (ID: <?= $kasir['id_kasir']; ?>)
+                    </option>
+                    <?php } ?>
+                </select>
             </div>
 
             <div class="form-field">
@@ -127,10 +138,21 @@ $query_produk = mysqli_query($connection, "SELECT * FROM tabel_produk");
         </div>
 
         <div class="form-field">
-            <label for="id_donasi">ID Donasi</label>
+            <label for="id_donasi">Pilih Donasi</label>
 
-            <input type="number" id="id_donasi" name="id_donasi" class="custom-input" placeholder="Masukkan ID donasi"
-                required>
+            <select name="id_donasi" id="id_donasi" class="custom-input" required>
+
+                <option value="">Pilih Donasi</option>
+
+                <?php while ($donasi = mysqli_fetch_assoc($query_donasi)) { ?>
+
+                <option value="<?= $donasi['id_donasi']; ?>">
+                    <?= htmlspecialchars($donasi['nama_donasi']); ?>
+                </option>
+
+                <?php } ?>
+
+            </select>
         </div>
 
         <!-- TOMBOL SIMPAN -->
