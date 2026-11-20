@@ -21,7 +21,6 @@
                 <li><a href="/indomaret_RPL4/pages/donations/list.php">Donations</a></li>
                 <li><a href="/indomaret_RPL4/pages/products/list.php">Products</a></li>
                 <li><a href="/indomaret_RPL4/pages/transactions/list.php">Transactions</a></li>
-                <li><a href="#">Process</a></li>
             </ul>
         </nav>
         <div class="cta-button">
