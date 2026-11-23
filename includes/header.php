@@ -23,6 +23,11 @@
                 <li><a href="/indomaret_RPL4/pages/transactions/list.php">Transactions</a></li>
             </ul>
         </nav>
+
+        <div class="logo-kanan">
+            <img src="/indomaret_RPL4/assets/img/Logo_Indomaret-Photoroom.png" alt="Logo Indomaret">
+        </div>
+
     </header>
 
 </body>
