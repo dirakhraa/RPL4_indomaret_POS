@@ -23,9 +23,6 @@
                 <li><a href="/indomaret_RPL4/pages/transactions/list.php">Transactions</a></li>
             </ul>
         </nav>
-        <div class="cta-button">
-            <a href="#">Login</a>
-        </div>
     </header>
 
 </body>
