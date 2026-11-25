@@ -771,3 +771,316 @@ center > .btn-primary {
     padding: 20px;
   }
 }
+
+/* ===== Dashboard Container ===== */
+.dashboard-container {
+  padding: 25px 35px;
+  max-width: 1250px;
+  margin: 0 auto;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.dashboard-container h1 {
+  font-size: 27px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 5px;
+}
+
+.dashboard-subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* ===== Cards Grid ===== */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+/* ===== Individual Card ===== */
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #f1f5f9;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  margin: 12px 0 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.dashboard-card p {
+  font-size: 29px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 5px;
+  line-height: 1.2;
+}
+
+.dashboard-card span {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* ===== Card Icon ===== */
+.card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.card-icon.blue {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.card-icon.green {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.card-icon.orange {
+  background: #fffbeb;
+  color: #f59e0b;
+}
+
+.card-icon.purple {
+  background: #f5f3ff;
+  color: #8b5cf6;
+}
+
+/* ===== Accent Warna Card ===== */
+.dashboard-card:nth-child(1) {
+  border-top: 3px solid #3b82f6;
+}
+
+.dashboard-card:nth-child(2) {
+  border-top: 3px solid #10b981;
+}
+
+.dashboard-card:nth-child(3) {
+  border-top: 3px solid #f59e0b;
+}
+
+.dashboard-card:nth-child(4) {
+  border-top: 3px solid #8b5cf6;
+}
+
+/* ===== Income Card ===== */
+.income-card {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  border-radius: 13px;
+  padding: 20px 25px;
+  color: white;
+  box-shadow: 0 5px 17px rgba(59, 130, 246, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+}
+
+.income-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.income-card h3 {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.9;
+  margin: 0 0 5px;
+}
+
+.income-card p {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ===== Transaksi Terbaru ===== */
+.recent-transactions {
+  background: #ffffff;
+  border-radius: 13px;
+  padding: 22px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  margin-bottom: 30px;
+}
+
+.recent-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.recent-heading h2 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin: 0 0 5px;
+}
+
+.recent-heading p {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border-radius: 7px;
+  background: #eff6ff;
+  color: #0755ad;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.view-all-btn:hover {
+  background: #dbeafe;
+}
+
+/* ===== Tabel Transaksi ===== */
+.recent-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.recent-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.recent-table thead {
+  background: #f1f5f9;
+}
+
+.recent-table th {
+  padding: 13px 14px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.recent-table td {
+  padding: 14px;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 12px;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.recent-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+.recent-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.transaction-code {
+  color: #0755ad !important;
+  font-weight: 600;
+}
+
+.transaction-price {
+  color: #1e293b !important;
+  font-weight: 600;
+}
+
+.empty-transaction {
+  text-align: center;
+  padding: 25px !important;
+  color: #94a3b8 !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 20px 15px;
+  }
+
+  .dashboard-container h1 {
+    font-size: 23px;
+  }
+
+  .dashboard-cards {
+    gap: 12px;
+  }
+
+  .dashboard-card {
+    padding: 15px;
+  }
+
+  .dashboard-card p {
+    font-size: 24px;
+  }
+
+  .income-card {
+    padding: 17px;
+  }
+
+  .income-card p {
+    font-size: 21px;
+  }
+
+  .recent-transactions {
+    padding: 15px;
+  }
+
+  .recent-heading {
+    align-items: flex-start;
+  }
+
+  .recent-heading h2 {
+    font-size: 16px;
+  }
+}
