@@ -25,7 +25,7 @@ $query_pendapatan = mysqli_query($connection, "
 $data_pendapatan = mysqli_fetch_assoc($query_pendapatan);
 $total_pendapatan = $data_pendapatan['pendapatan'] ?? 0;
 
-// Mengambil 5 transaksi terbaru
+// Mengambil transaksi terbaru
 $query_terbaru = mysqli_query($connection, "
     SELECT kode_transaksi, tanggal_transaksi, no_order, total
     FROM table_transaksi
