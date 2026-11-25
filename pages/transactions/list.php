@@ -36,7 +36,7 @@ include ROOTPATH . '/config/config.php';
 
             <?php
 
-            $query = "SELECT * FROM table_transaksi";
+            $query = "SELECT * FROM table_transaksi ORDER BY tanggal_transaksi ASC";
             $result = mysqli_query($connection, $query);
 
             $no = 1;
